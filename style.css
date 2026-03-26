@@ -1,65 +1,64 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: white;
     color: white;
-    }
+    width: 100%;
+}
 
-    h1 {
-        font-family: Montserrat;
-        font-size: 50px;
-        display:flex;
-        justify-content: center;
-        margin-top: 75px;
-        }
+h1 {
+    font-family: Montserrat;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    margin-top: 75px;
+    text-align: center;
+}
 
-    h2 {
-        display: flex;
-        justify-content: center;
-        font-family: Jost;
-        font-size: 25px;
-    }
+h2 {
+    display: flex;
+    justify-content: center;
+    font-family: Jost;
+    font-size: 25px;
+}
 
-    p {
-        font-family: Jost;
-        margin: 0;
-        align-items: center;
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        margin-bottom: 30px;
-    }
+p {
+    font-family: Jost;
+    margin: 0;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 30px;
+}
 
-header{
+header {
     background-color: #735D78;
     color: white;
     height: 85px;
-    width: 100%;    
+    width: 100%;
+    display: flex;
 }
 
-.sections{
+.sections {
     list-style: none;
     display: flex;
     justify-content: space-evenly;
 }
 
-li{
+li {
     font-family: Montserrat;
     font-weight: bold;
 }
 
-.présentation{
+.presentation {
     height: 100vh;
-    background-image: linear-gradient(to bottom,#735D78,#B392AC,#D1B3C4,#E8C2CA);
+    width: 100%;
+    background-image: linear-gradient(to bottom, #735D78, #B392AC, #D1B3C4, #E8C2CA);
     justify-content: center;
 }
 
-.logo{
-    width: 50px;
-    height: auto;
-}
 
-.download{
+.download {
     display: inline-block;
     padding: 12px 24px;
     background-color: #735D78;
@@ -75,6 +74,15 @@ li{
     background-color: #B392AC;
 }
 
-.boutons{
+.boutons {
     text-align: center;
+}
+
+@media screen and (max-width:800px) {
+    .sections{
+        width: 100%;
+    }
+    .hero container{
+
+    }
 }
