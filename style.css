@@ -5,20 +5,33 @@ body {
     width: 100%;
 }
 
+.bienvenue{
+    margin: 0;
+    margin-top: 200px;
+}
+
 h1 {
     font-family: Montserrat;
     font-size: 50px;
     display: flex;
+    margin: 0;
     justify-content: center;
-    margin-top: 75px;
     text-align: center;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+}
+
+.portfolio{
+    margin: 0 0 50px;
 }
 
 h2 {
+    margin: 50px 0;
+    margin-bottom: 120px;
     display: flex;
     justify-content: center;
     font-family: Jost;
     font-size: 25px;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.4);
 }
 
 p {
@@ -31,32 +44,47 @@ p {
     margin-bottom: 30px;
 }
 
-header {
+header nav ul{
     background-color: #735D78;
     color: white;
-    height: 85px;
-    width: 100%;
-    display: flex;
-}
-
-.sections {
     list-style: none;
     display: flex;
-    justify-content: space-evenly;
+    width: 600px;
+    padding: 15px 0;
+    justify-content: space-around;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px #B392AC;
+}
+
+header nav{
+    display: flex;
+    justify-content: center;
+}
+
+header nav a{
+    text-decoration: none;
+    color: white;
+}
+
+header nav a:hover{
+    background-color: #B392AC;
+    padding :8px 8px;
+    border-radius: 10px;
+
 }
 
 li {
     font-family: Montserrat;
     font-weight: bold;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.4);
 }
 
-.presentation {
+.section_presentation {
     height: 100vh;
     width: 100%;
     background-image: linear-gradient(to bottom, #735D78, #B392AC, #D1B3C4, #E8C2CA);
     justify-content: center;
 }
-
 
 .download {
     display: inline-block;
@@ -68,6 +96,7 @@ li {
     border-radius: 2px;
     text-decoration: none;
     justify-content: center;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.4);
 }
 
 .download:hover {
@@ -78,11 +107,41 @@ li {
     text-align: center;
 }
 
-@media screen and (max-width:800px) {
-    .sections{
-        width: 100%;
-    }
-    .hero container{
+.section_pres{
+    background-image: linear-gradient(to top, #735D78, #B392AC, #D1B3C4, #E8C2CA);
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+}
 
+.carte{
+    background:#D1B3C4;
+    border-radius: 5px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    width: 310px;
+    padding: 25px;
+}
+
+.txt_pres{
+    text-align:start;
+    margin: 0;
+}
+
+@media screen and (max-width:800px) {
+    h1{
+        font-size: 6vw;
+    }
+
+    h2{
+        font-size: 6vw;
+    }
+
+    header nav{
+        flex-direction: inherit;
+        align-items: flex-end;
+    }
+
+    .boutons{
+        justify-content: space-around;
     }
 }
